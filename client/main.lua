@@ -291,7 +291,12 @@ function works()
                                         prop = {
                                             model = `prop_weld_torch`,
                                             pos = vec3(0.03, 0.03, 0.02),
-                                            rot = vec3(5.0, 0.0, 0.0),
+                                            rot = vec3(0.0, 0.0, 0.0),
+                                        }, 
+										disable = {
+                                            move = true,
+                                            car = true,
+                                            combat = true,
                                         },
                                     }) then
                                         TriggerServerEvent('ic3d_windturbines:eletrico-eletrocutar', success)
