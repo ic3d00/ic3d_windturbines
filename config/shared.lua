@@ -15,10 +15,36 @@ Config.Station = {
     model = 's_m_y_dockwork_01',
     carModel = 'caddy3',
     spawnPoint = vec3(2082.9341, 2340.8667, 94.2745),
-    deletePoint = vec3(2082.9341, 2340.8667, 94.2745),
+    deletePoint = vec3(2082.6936, 2346.5425, 94.2409),
     heading = 181.8469
     }
 }
+
+Config.Uniforms = {
+	
+		male = {
+			['tshirt_1'] = 59,  ['tshirt_2'] = 0,
+            ['torso_1'] = 273,   ['torso_2'] = 0,
+            ['decals_1'] = 0,   ['decals_2'] = 0,
+            ['arms'] = 19,
+            ['pants_1'] = 36,   ['pants_2'] = 0,
+            ['shoes_1'] = 63,   ['shoes_2'] = 0,
+            ['helmet_1'] = -1,  ['helmet_2'] = 0,
+            ['chain_1'] = 0,    ['chain_2'] = 0,
+            ['ears_1'] = 0,     ['ears_2'] = 0
+		},
+		female = {
+			['tshirt_1'] = 10,  ['tshirt_2'] = 0,
+			['torso_1'] = 48,   ['torso_2'] = 0,
+			['decals_1'] = 0,   ['decals_2'] = 0,
+			['arms'] = 31,
+			['pants_1'] = 32,   ['pants_2'] = 0,
+			['shoes_1'] = 24,   ['shoes_2'] = 0,
+			['helmet_1'] = 10,  ['helmet_2'] = 2,
+			['chain_1'] = 0,    ['chain_2'] = 0,
+			['ears_1'] = 2,     ['ears_2'] = 0
+		}
+}	
 
 Config.Points = {
     {
