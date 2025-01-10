@@ -9,7 +9,7 @@ Features:
 - Fix wind turbines for item or money rewards
 - All turbines are fixable
 - Very customizable
-- Secure of cheaters
+- Secure of cheaters ( not yet )
 - Cool
 
 - [Discord](https://discord.gg/3h2WpSH7Sg)
