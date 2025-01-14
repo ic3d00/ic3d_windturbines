@@ -5,7 +5,6 @@ local showJobs = false
 local repairCooldowns = {}
 
 
-
 -- Function to create blips and spawners
 local function createStationBlips()
     for k, v in ipairs(Config.Station) do
@@ -21,7 +20,7 @@ local function createStationBlips()
         EndTextCommandSetBlipName(blip)
         -- SPAWNER BLIP END --
 
-        -- SPAWNER BLIP --
+    
 local sphere = lib.zones.sphere({
     coords = v.zone,
     radius = 1.5,
@@ -61,7 +60,7 @@ local sphere = lib.zones.sphere({
         end
     end,
     onExit = function()
-        lib.hideTextUI()  -- Hide text UI when exiting the zone
+        lib.hideTextUI() 
     end,
 })
 
@@ -107,69 +106,6 @@ local deleterSphere = lib.zones.sphere({
         lib.hideTextUI()  -- Hide text UI when exiting the delete point
     end,
 })
-
-
--- local marker = nil  -- Create a global variable for the marker
-
--- local sphere = lib.zones.sphere({
-    -- coords = v.deletePoint,
-    -- radius = 3,
-    -- debug = true,  -- Enable debugging for zone
-    -- inside = function()
-        -- if cache.vehicle then
-            -- if IsControlJustPressed(38, 38) and showJobs then
-                -- local vehicle = GetVehiclePedIsIn(cache.ped, false)
-                -- ESX.Game.DeleteVehicle(vehicle)
-                -- stopJob()  -- Stop the job and clean up
-            -- end
-        -- else
-            -- lib.hideTextUI()
-        -- end
-    -- end,
-    -- onEnter = function()
-        -- if not showJobs then
-            -- lib.showTextUI('[E] - Spawn Vehicle')
-        -- end
-        
-        -- -- Ensure the marker is displayed
-        -- if not marker then
-            -- marker = lib.marker.new({
-                -- type = 1,  -- Type 1 for a cylinder marker
-                -- coords = v.deletePoint,
-                -- height = 1,
-                -- width = 1,
-                -- color = { r = 255, g = 0, b = 0, a = 100 },  -- Red color
-            -- })
-        -- end
-
-        -- -- Draw the marker
-        -- if marker then
-            -- marker:draw()
-        -- end
-    -- end,
-    -- onExit = function()
-        -- lib.hideTextUI()
-        
-        -- -- Reset marker when exiting the zone
-        -- if marker then
-            -- marker = nil  -- Remove the marker by setting it to nil
-        -- end
-    -- end,
--- })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         -- PED
         lib.RequestModel(v.model)
@@ -299,7 +235,7 @@ function works()
                                             combat = true,
                                         },
                                     }) then
-                                        TriggerServerEvent('ic3d_windturbines:eletrico-eletrocutar', success)
+                                        TriggerServerEvent('ic3d_windturbines:reward', success)
 
                                         lib.notify({
                                             title = 'Wind Turbine Worker',

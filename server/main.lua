@@ -1,7 +1,7 @@
 ESX = exports["es_extended"]:getSharedObject()
 
-RegisterServerEvent('ic3d_windturbines:eletrico-eletrocutar')
-AddEventHandler('ic3d_windturbines:eletrico-eletrocutar', function(success)
+RegisterServerEvent('ic3d_windturbines:reward')
+AddEventHandler('ic3d_windturbines:reward', function(success)
     local playerId = source
     local ped = ESX.GetPlayerFromId(playerId)
 
